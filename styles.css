@@ -1,0 +1,99 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+svg {
+  fill: currentColor;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: 
+    "links img"
+    "links img"
+    "links img"
+}
+
+.links {
+  text-align: center;
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box1 box1 box2"
+    "box3 box4 box5"
+    "box6 box7 box8"
+}
+
+.box {
+  height: 33vh;
+  width: 20vw;
+  color: #FFFFFF;
+}
+
+.links-icon {
+  height: 20vh;
+  width: 20vh;
+  margin-top: 4vh;
+  /* color: #FFFFFF;
+  fill: currentColor; */
+}
+
+.icon-label {
+  display: block;
+}
+
+.box1 {
+  width: 100%;
+  grid-area: box1;
+  background-color: #C44530;
+  text-align: left;
+}
+
+.box1 h1 {
+  font-size: 2rem;
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: #6F8040;
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: #F4AF93;
+}
+
+.box4 {
+  grid-area: box4;
+  background-color: #4C4830;
+}
+
+.box5 {
+  grid-area: box5;
+  background-color: #D9AA55;
+}
+
+.box6 {
+  grid-area: box6;
+  background-color: #975A3A;
+}
+
+.box7 {
+  grid-area: box7;
+  background-color: #DA5C3C;
+}
+
+.box8 {
+  grid-area: box8;
+  background-color: #D3CB96
+}
+
+.images {
+  grid-area: img;
+  background-image: url('images/hot-dog-rice.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
