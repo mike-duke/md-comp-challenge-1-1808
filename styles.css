@@ -41,12 +41,12 @@ main {
   height: 50%;
   width: 40%;
   padding-bottom: 10%;
-  /* margin-top: 4vh; */
 }
 
 .icon-label {
   display: block;
   text-shadow: 1px 1px 2px #A9A9A9;
+  font-size: 1.5rem;
 }
 
 .box1 {
@@ -59,10 +59,31 @@ main {
 
 .box1 h1 {
   font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 3.5rem;
-  margin: 0;
+  font-size: 3.8rem;
+  margin: 2% 5%;
   color: #FFC300;
   text-shadow: 1px 1px 2px #000000;
+}
+
+.box1 p {
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 2% 5%;
+}
+
+.box1 button {
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  color: #FFFFFF;
+  height: 40px;
+  width: 120px;
+  padding: 0 2% 0 0;
+  margin: 1% 0 0 5%;
+}
+
+.button-icon {
+  height: 40%;
+  width: 40%;
 }
 
 .box2 {
@@ -105,4 +126,45 @@ main {
   background-image: url('images/hot-dog-rice.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 1410px) {
+  .links {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .box8 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 50%;
+  }
+
+  .box1 {
+    width: 100%;
+    height: 80%;
+  }
+
+  .box1 button {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .images {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+  }
 }
