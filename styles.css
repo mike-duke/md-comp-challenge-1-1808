@@ -13,7 +13,8 @@ main {
   grid-template-areas: 
     "links img"
     "links img"
-    "links img"
+    "links img";
+  height: 100vh;
 }
 
 .links {
@@ -28,7 +29,7 @@ main {
 }
 
 .box {
-  height: 33vh;
+  height: 34vh;
   width: 20vw;
   color: #FFFFFF;
   display: flex;
@@ -45,7 +46,7 @@ main {
 
 .icon-label {
   display: block;
-  text-shadow: 1px 1px 2px #A9A9A9;
+  text-shadow: 1px 1px 2px #000000;
   font-size: 1.5rem;
 }
 
@@ -126,7 +127,71 @@ main {
   background-image: url('images/hot-dog-rice.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
+
+.slideshow-button {
+  background-color: #A9A9A9;
+  opacity: 0.8;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.left-right-buttons {
+  width: 100%;
+  margin: 2%; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-menu {
+  position: absolute; 
+  top: 1%;
+  left: 94%;
+}
+
+.image-select-button {
+  height: 17px;
+  width: 15px;
+  opacity: 0.7;
+  background-color: #A9A9A9;
+  border-radius: 50px;
+}
+
+.current {
+  opacity: 1.0;
+  background-color: #FFFFFF;
+}
+/* .menu-radio {
+  display: flex;
+  align-self: flex-start;
+} */
+
+/* .left-arrow {
+  margin-right: 84%;
+}
+
+.right-arrow {
+  margin-right: 4%;
+}
+
+.menu-radio {
+  /* width: 100%; */
+  /* margin: 2% 2% 2% 90%;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+
+
+.left-right-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+} */
 
 @media screen and (max-width: 1410px) {
   .links {
@@ -151,6 +216,10 @@ main {
 
   .box1 button {
     margin-bottom: 5%;
+  }
+
+  .image-menu {
+    left: 90%
   }
 }
 
